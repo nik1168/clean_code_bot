@@ -14,6 +14,13 @@ SYSTEM_PROMPT = (
     "code to be refactored."
 )
 
+# --- Chain of Thought (CoT) prompting ---
+# Instead of asking the model to just "refactor this", we force it to
+# reason step-by-step BEFORE writing any code. Steps 1-4 below make the
+# model think through the problems first (smells, SOLID, docs, plan),
+# and only then produce the refactored output. This is the CoT technique
+# in action — breaking the task into reasoning steps so the model doesn't
+# skip straight to a shallow rewrite.
 _USER_TEMPLATE_HEADER = """\
 I need you to refactor the following Python file.  Before you write any code,
 walk through these steps in order:
