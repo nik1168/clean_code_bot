@@ -11,6 +11,10 @@ CLI tool that refactors Python files using an LLM. Feed it a messy script, get b
 - CLI built with `argparse`
 - `examples/` folder with before/after samples (`dirty_calculator.py` → `clean_calculator.py`, `dirty_task_manager.py` → `clean_task_manager.py`)
 
+## Demo
+
+https://drive.google.com/file/d/1pCZcC_xcWAiGQZMAVkeCf5ioTnNOPyZZ/view?usp=sharing
+
 ## Setup
 
 ```bash
